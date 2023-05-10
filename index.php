@@ -355,33 +355,6 @@ if(array_key_exists("ulozit", $_POST)){
     <div class="recepty">
         <div>
             <h2>Pojďme uvařit třeba:</h2>
-        <!-- <select name="recept" id="recept" form="recept">
-            <option value="">Vyber recept</option>
-            <option value="1">Guláš</option>
-            <option value="2">Bramborový salát</option>
-            <option value="3">Vepřový řízek</option>
-            
-            <?php /*
-                $dotaz = $db->prepare("SELECT id, nazev FROM recept ORDER BY nazev");
-                $dotaz->execute();
-                $recepty = $dotaz->fetchAll();
-                foreach ($recepty as $recept)
-                {
-                    
-                    echo "<option value='{$recept['id']}'>{$recept['nazev']}</option>";
-                    //$_SESSION["recept"] = $recept['id'];
-                    //$idreceptu = $recept['id'];
-                }*/
-                
-            ?>
-        </select>
-        
-        <form action="" method="post" id="recept">
-            <input type="submit" name="vypismi" value="Ukaž recept">
-        </form>   
-        -->
-
-
             <?php
                 $dotaz = $db->prepare("SELECT * FROM recept ORDER BY nazev ASC");
                 $dotaz->execute();
