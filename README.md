@@ -1,1 +1,2 @@
 # spizirna
+Projekt využívající databáze. 
