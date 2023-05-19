@@ -18,3 +18,6 @@ NÁVOD:
 
  4) "Pojďme uvařit třeba:"
   - kliknutím na jednotlivá jídla se zobrazí příslušný recept a seznam potřebných ingrediencí
+
+POZNÁMKA:
+Na debugování se stále pracuje.
