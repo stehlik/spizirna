@@ -368,10 +368,7 @@ if(array_key_exists("ulozit", $_POST)){
         <div>
             <h2>Pojďme uvařit třeba:</h2>
         </select>
-        
-        <form action="" method="post" id="recept">
-            <input type="submit" name="vypismi" value="Ukaž recept">
-        </form>   
+   
             <?php
                 $dotaz = $db->prepare("SELECT * FROM recept ORDER BY nazev ASC");
                 $dotaz->execute();
