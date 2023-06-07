@@ -144,6 +144,13 @@ if(array_key_exists("ulozit", $_POST)){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spižírna</title>
     <style>
+        h2{
+           text-decoration: underline; 
+        }
+        body{
+            background-color: lightskyblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .chyba{
             color: red;
             font-weight: bold;
@@ -159,10 +166,11 @@ if(array_key_exists("ulozit", $_POST)){
         .container > div{
             border-radius: 5px;
             border-style: solid;
-            border-color: green;
+            border-color: blue;
             border-width: 5px;
             padding: 5px;
             margin: 10px;
+            background-color: lightgoldenrodyellow;
         }
         .nakupniSeznam {
             margin: 10px;
@@ -177,7 +185,7 @@ if(array_key_exists("ulozit", $_POST)){
             margin-bottom: 10px;
         }
         .recepty{
-            width: 450px;
+            width: 440px;
         }
     </style>
 </head>
@@ -194,8 +202,8 @@ if(array_key_exists("ulozit", $_POST)){
             ?>
         </form>
     
-        <table >
-            <tr><td>Ve spižírně je:</td> <td width=100px><?php echo $mnozstvi." ". $jednotka;?></td>        
+        <table>
+            <tr><td>Ve spižírně je:</td> <td width=80px><b><?php echo $mnozstvi." ". $jednotka;?></b></td>        
                 <td>
                     <form method="post">
                         <input type="text" name="zmenitMnozstvi"><?php echo " ".$jednotka;?>
@@ -204,7 +212,7 @@ if(array_key_exists("ulozit", $_POST)){
                 </td>
             </tr>
             <tr>
-                <td>Minimální množství je:</td> <td><?php echo $minimum." ". $jednotka;?></td>
+                <td>Minimální množství je:</td> <td><b><?php echo $minimum." ". $jednotka;?></b></td>
                 <td>
                     <form method="post">
                         <input type="text" name="zmenitMinimum"><?php echo " ".$jednotka;?>
@@ -217,7 +225,7 @@ if(array_key_exists("ulozit", $_POST)){
 
         <div>
             <form method="post">
-                <button name="smazat">Vyhoď potravinu</button>
+                <button name="smazat">Vyhodit potravinu</button>
             </form>
         </div>
             <?php 
@@ -253,7 +261,7 @@ if(array_key_exists("ulozit", $_POST)){
     <div>
         <h2>Ulož do spižírny novou potravinu</h2>
         <form method="post">
-            <label for="nazevNovePotraviny">Název potraviny:</label>
+            <label for="nazevNovePotraviny">Název:</label>
             <input type="text" name="nazevNovePotraviny" id="nazevNovePotraviny">
             <?php
             if (array_key_exists("nazevNovePotraviny", $chyby))
@@ -323,7 +331,7 @@ if(array_key_exists("ulozit", $_POST)){
         <div>
             <h2>Co chybí ve spižírně?</h2>
             <form action="" method="post">
-                <input type="submit" name="vypsat" value="Vypiš nákupní seznam">
+                <input type="submit" name="vypsat" value="Vypsat nákupní seznam">
             </form>
         </div>
         <div >
@@ -366,9 +374,9 @@ if(array_key_exists("ulozit", $_POST)){
 
     <div class="recepty">
         <div>
-            <h2>Pojďme uvařit třeba:</h2>
+            <h2>Pojďme uvařit třeba...</h2>
         </select>
-   
+
             <?php
                 $dotaz = $db->prepare("SELECT * FROM recept ORDER BY nazev ASC");
                 $dotaz->execute();
