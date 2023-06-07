@@ -15,9 +15,9 @@ Spižírna je aplikace pro přehlednou evidenci množství potravin v domácnost
   - poměrně intuitvní formulář pro vložení nové potraviny do spižírny
    
  **3) Co chybí ve spižírně?**
-  - "Vypiš nákupní seznam" - vypíše potraviny (včetně dalších informací), které jsou na hranici nebo pod hranicí nastaveného minimálního množství
+  - "Vypisat nákupní seznam" - vypíše potraviny (včetně dalších informací), které jsou na hranici nebo pod hranicí nastaveného minimálního množství
 
- **4) "Pojďme uvařit třeba:"**
+ **4) "Pojďme uvařit třeba..."**
   - kliknutím na jednotlivá jídla se zobrazí příslušný recept a seznam potřebných ingrediencí
 
 POZNÁMKA:
