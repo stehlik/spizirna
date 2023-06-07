@@ -2,8 +2,8 @@
 Spižírna je aplikace pro přehlednou evidenci množství potravin v domácnosti či restauraci.
 <img width="547" alt="spizirna1" src="https://github.com/stehlik/spizirna/assets/51755591/47baca1f-c24c-43f9-af9d-127c767e78ed">
 
-**NÁVOD:
-1) Najdi potravinu ve spižírně**
+**NÁVOD:**
+**1) Najdi potravinu ve spižírně**
   - "Potravina" - zadejte název potraviny např. "mrkev" nebo "brambory" a stiskněte tlačítko "Hledej".
   - "Ve spíži je" - aktuální množství potraviny ve spíži
                   - lze změnit zadáním kladného čísla (doplnění potraviny do spíže), nebo záporného čísla (odebrání ze spíže) a stisknutím tlačítka "Vložit nebo odebrat    množství"
